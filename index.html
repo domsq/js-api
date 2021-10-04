@@ -15,6 +15,9 @@
         .then(data => {
             document.getElementById("content").innerText = data.species;
         })
+        .catch((e) => {
+            console.error("Error:", e);
+        })
     </script>
 </body>
 </html>
